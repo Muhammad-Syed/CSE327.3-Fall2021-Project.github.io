@@ -1,0 +1,50 @@
+<section class="payment-section">
+  <!----------------------------------Page Heading----------------------------------->
+  <section class="user-section">
+    <!----------------------------------Page Heading----------------------------------->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-sm-10 col-lg-10 col-md-10">
+          <div class="user-heading">
+            <h2>My Cart</h2>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------------------------------Item Info Table----------------------------------->
+  <div class="row">
+    <div class="col-xl-12 col-md-12 col-sm-12">
+      <table class="payment-info-table">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td colspan="3">Delivery cost</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!----------------------------------Payment Buttons----------------------------------->
+  <div class="gap"></div>
+
+  <div class="bkash-button">
+    <a
+      class="btn btn-default"
+      href="checkout.php?price=<?php echo $_SESSION['total'] ?>"
+      role="button"
+      >Checkout</a
+    >
+  </div>
+  <div class="gap"></div>
+</section>
