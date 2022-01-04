@@ -1,6 +1,6 @@
 <?php
 	
-  include "../resources/config.php";
+  include "resources/config.php";
   include_once('header.php');
 
 	$feedback = $_POST["feedback"];
