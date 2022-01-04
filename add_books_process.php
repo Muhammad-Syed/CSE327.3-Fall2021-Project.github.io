@@ -1,7 +1,7 @@
 <?php
 
 	
-  include "../resources/config.php";
+  include "resources/config.php";
   include_once('header.php');
 
   $book_title = $_POST["book_title"];
