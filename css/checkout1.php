@@ -1,4 +1,4 @@
-<?php require_once("../resources/config.php"); ?>
+<?php require_once("resources/config.php"); ?>
 <?php
 $post_data = array();
 $post_data['store_id'] = "bookr5f41517d60625";
