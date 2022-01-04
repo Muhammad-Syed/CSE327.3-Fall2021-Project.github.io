@@ -2,7 +2,7 @@
 
 <footer>
   <div class="text-muted pull-left">
-      <a href= target="_blank"> Book Rental Management </a>
+      <a href="" target="_blank"> Book Rental Management </a>
   </div>
   <div class="text-muted pull-right">
       <a href="admin.php">Admin Login</a> 2020
