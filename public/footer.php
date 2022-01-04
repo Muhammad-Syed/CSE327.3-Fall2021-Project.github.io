@@ -40,7 +40,7 @@
         <a href="#" class="fa fa-instagram gap"></a>
       </section>
     </div>
-    <div class="text-center">&copy; Book Rental System 2020</div>
+    <div class="text-center">&copy; Book Rental System 2022</div>
   </div>
 </footer>
 
