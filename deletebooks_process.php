@@ -1,5 +1,5 @@
 <?php
-  include "../resources/config.php";  
+  include "resources/config.php";  
 
 
   $id = $_GET["id"];
