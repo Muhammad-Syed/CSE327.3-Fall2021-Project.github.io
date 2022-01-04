@@ -1,4 +1,4 @@
-<?php include_once("../resources/config.php"); 
+<?php include_once("resources/config.php"); 
     include_once('header.php');
 ?>
 
