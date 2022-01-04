@@ -1,5 +1,8 @@
-<section class="user-section">
-      <div class="container">
+<?php require_once("../resources/config.php"); 
+    include_once('header.php');
+?>
+       <section class="user-section">
+      <div class="container">  
         <div class="row">
           <div class="col-md-1"></div>
             <div class="col-sm-10 col-lg-10 col-md-10">
@@ -10,9 +13,7 @@
             </div>
         </div>
       </div>
-
   </section>
-
 
 
       <section>
@@ -23,9 +24,15 @@
                   <div class="genre-list-table">
                       <table>
 
-
-
-
+                      <?php
+                          $query = "SELECT * FROM genre";
+                          $send_query = mysqli_query($connection, $query) or die( mysqli_error($connection));
+                          
+                          while($row = mysqli_fetch_array($send_query)){
+                            
+                            echo "<tr><td><a href='single_genre.php?id={$row['genre_id']}'>{$row['genre_title']}</a></td></tr>";
+                          }
+                          ?>
                       </table>
                   </div>
                </div>
@@ -33,3 +40,5 @@
             </div>
         </div>
     </section>
+
+  <?php include_once('footer.php');?>
