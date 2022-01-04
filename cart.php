@@ -1,4 +1,4 @@
-<?php require_once("../resources/config.php"); 
+<?php require_once("resources/config.php"); 
 if(!isset($_SESSION['username'])){
     header('location: login.php');
 }
