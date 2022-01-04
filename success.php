@@ -1,5 +1,5 @@
 
-<?php require_once("../resources/config.php"); 
+<?php require_once("resources/config.php"); 
  include_once('header.php');
 $_SESSION['status'] = $_GET['status'];
 
