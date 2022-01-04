@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <title></title>
-
-  <link rel="stylesheet" href="CSS/homepage.css">
-  <link rel="icon" href="">
-
-</head>
-
-
-</body>
-
+<?php require_once("../resources/config.php"); 
+      include_once('header.php');
+      include_once('signin_process.php');
+?>
 <section class="user-section">
-        <!----------------------------------Page Heading----------------------------------->
-      <div class="container">
+ 
+      <div class="container">  
         <div class="row">
           <div class="col-md-1"></div>
             <div class="col-sm-10 col-lg-10 col-md-10">
@@ -28,14 +15,14 @@
             </div>
         </div>
       </div>
-
+       
   </section>
 
 
 <div class="col-xs-8 col-sm-8 col-md-5 offset-md-3 mx-auto gap">
                     <span class="anchor" id="add_books"></span>
 
-                    <!-- form card register -->
+                  
                     <div class="card card-outline-secondary">
                         <div class="card-body">
                             <form class="form" role="form" action="signin_process.php" method="post" enctype="multipart/form-data">
@@ -50,7 +37,7 @@
                                     <label for="inputName">Username</label>
                                     <input type="text" class="form-control" id="username" name="username" value="<?php echo $username; ?>" required>
                                 </div>
-
+                                
                                 <div class="form-group">
                                     <label for="inputName">Full name</label>
                                     <input class="form-control" type="text" name="full_name">
@@ -99,7 +86,7 @@
                                     <label for="inputName">Profile Photo</label>
                                     <input type="file" name="profile_image" id="profile_image">
                                 </div>
-
+                                
                                 <div class="form-group text-center">
                                     <button type="submit" value="Register" name="register" class="btn btn-success btn-lg">Register</button>
                                 </div>
@@ -109,13 +96,18 @@
                             </form>
                         </div>
                     </div>
-                    <!-- /form card register -->
+                    
 
                 </div>
 
                 <div class="gap"></div>
 
 
+
+
+
+        
+  <?php include_once('footer.php');?>
 
 </body>
 </html>
