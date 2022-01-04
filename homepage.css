@@ -3,7 +3,7 @@ body{
     margin: 0;
   }
   
-  /*navbar*/
+  /*********navbar***********/
   .navbar{
     background-color: #2d096b;
   }
@@ -39,10 +39,10 @@ body{
   .cart-button a{
     color: #fff;
   }
- 
-/*end of navbar styling*/
+  /****************end of navbar styling******************/
   
-  /*Below Navbar*/
+  
+  /*********Below Navbar***********/
   
   .below-navbar{
     height: 200px;
@@ -56,8 +56,7 @@ body{
     font-family: 'Raleway';
   }
   
-  /*Search Container*/
-
+  /*********Search Container***********/
   .search-container{
      margin: auto;
      padding: 40px 0 0 30px;
@@ -94,9 +93,8 @@ body{
     opacity: 0.88;
   }
   
-  /*Books*/
-
-.books{
+  /*********Books***********/
+  .books{
       height: 860px;
       padding: 40px 30px 20px 50px;
       text-align: center;
@@ -121,9 +119,7 @@ body{
   .book-images img:hover{
     opacity: .5;
   }
-
-  /*Footer*/
-
+  /*********Footer***********/
   footer{
     width: 100%;
     margin: 0;
