@@ -1,4 +1,4 @@
-<?php require_once("../resources/config.php"); 
+<?php require_once("resources/config.php"); 
       include_once('signin_process.php');
 ?>
 
