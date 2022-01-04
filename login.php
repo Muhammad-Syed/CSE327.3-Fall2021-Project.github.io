@@ -1,4 +1,4 @@
-<?php require_once("../resources/config.php"); 
+<?php require_once("resources/config.php"); 
       include_once('header.php');
       include_once('signin_process.php');
 ?>
@@ -44,8 +44,8 @@
                                     <button type="submit" name="login" value="Login" class="btn btn-success btn-lg">Login</button>
                                 </div>
                                 <p>
-									Not yet a member? <a href="signup.php">Sign Up</a>
-								</p>
+					Not yet a member? <a href="signup.php">Sign Up</a>
+				</p>
                             </form>
                         </div>
                     </div>
