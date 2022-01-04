@@ -1,4 +1,31 @@
- <!----------------------------------Profile----------------------------------->
+<?php
+  require_once("../resources/config.php"); 
+    include_once('header.php');
+
+?>
+
+<?php
+
+      $username = $_SESSION['username']; 
+      $query = "SELECT user_id FROM user WHERE username='$username'";
+      $result = mysqli_query($connection, $query);
+
+      if ($result->num_rows > 0) {
+      
+      while($row = $result->fetch_assoc()) {
+        $user_id =  $row['user_id']; //returns id
+      }
+      }
+?>
+
+<?php 
+        $query = "SELECT * FROM  user WHERE username ='$username' ";
+        $send_query = mysqli_query($connection, $query);
+        while($row = mysqli_fetch_array($send_query)){
+  ?>
+
+
+    <!----------------------------------Profile----------------------------------->
 
 
 <div class="main-body">
@@ -7,8 +34,10 @@
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                  
-                   </h4>
+                    <?php echo '<img src="data:image;base64,'.base64_encode($row['profile_image']).'" alt="Image" class="rounded-circle" width="150">'; ?>
+                    <div class="mt-3">
+                      <h4><?php echo $row["full_name"];
+                    } ?></h4>
                     </div>
                   </div>
                 </div>
@@ -45,17 +74,21 @@
 
 
             <div class="col-md-8">
-             
+              <?php 
+                    $query = "SELECT * FROM  user WHERE username ='$username' ";
+                    $send_query = mysqli_query($connection, $query);
+                    while($row = mysqli_fetch_array($send_query)){
+              ?>
               <div class="row">
                 <div class="col-sm-7 left-pad"> 
-                  <h5>Username: ></h5>
-                  <h5>Email: </h5>
-                  <h5>Address: </h5>
-                  <h5>Telephone:</h5>
+                  <h5>Username: <?php echo $row["username"];?></h5>
+                  <h5>Email: <?php echo $row["email"];?></h5>
+                  <h5>Address: <?php echo $row["address"];?></h5>
+                  <h5>Telephone: <?php echo $row["number"];?></h5>
                 </div>
 
                 <div class="col-sm-5 "> 
-                  <form method="post" action="">
+                  <form method="post" action="profile_process.php">
                     <div class="row">
                     <div class="col-md-3">
                       <label>Upload profile photo</label>
@@ -70,7 +103,19 @@
                   </form>
                 </div>    
 
+                  <?php  
+                  }
+                  
                 
+                    $query = "SELECT * FROM  user WHERE username ='$username' ";
+                    $send_query = mysqli_query($connection, $query);
+                    while($row = mysqli_fetch_array($send_query)){
+
+               echo '<img src="data:image;base64,'.base64_encode($row['profile_image']).'" alt="Image" style="width:200px; height:250px;">'; ?>
+
+              <?php  
+                  }
+                  ?>
 
                 </div>
               </div>
@@ -82,6 +127,11 @@
 
 
 
+
+
+
+
+<?php include_once('footer.php');?>
 
 
 </body>
