@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
- <!----------------------------------Footer----------------------------------->
 
 <body>      
  <footer class="panel-footer-2 text-center">
