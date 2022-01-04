@@ -1,20 +1,8 @@
+<?php require_once("../resources/config.php"); 
+      include_once('header.php');
+      include_once('signin_process.php');
+?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <title></title>
-
-  <link rel="stylesheet" href="">
-  <link rel="icon" href="">
-
-</head>
-
-
-  <body>
   <section class="user-section">
 
         <div class="container">
@@ -66,11 +54,7 @@
 
                   <div class="gap"></div>
 
-
-
-
-
+<?php include_once('footer.php');?>
 
 </body>
-
 </html>
